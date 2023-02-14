@@ -4,11 +4,13 @@ import { NavLink } from 'react-router-dom'
 
 function Header() {
     let activeStyle = {
-        color: '#fff'
+        color: '#999',
+        background: '#eee',
+        borderRadius: '6px',
     }
     return (
-        <div className='header'>
-            <Navbar expand='lg' fixed='top'>
+        <header className='header'>
+            <Navbar expand='lg' className='border'>
                 <Container>
                     <Navbar.Brand>Hasan</Navbar.Brand>
                     <Navbar.Toggle />
@@ -23,7 +25,7 @@ function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </header>
     )
 }
 
